@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>iPhone 16 Pro Mock</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="scene">
+      <div class="iphone">
+        <div class="dynamic-island"></div>
+
+        <div id="lockScreen" class="screen lock-screen active">
+          <div class="lock-header">
+            <span id="lockTime">9:41</span>
+            <span>LTE</span>
+          </div>
+
+          <div class="lock-body">
+            <div class="lock-date">10월 25일 금요일</div>
+            <div class="lock-clock" id="lockClock">9:41</div>
+
+            <div class="passcode-pad">
+              <div class="passcode-row">
+                <button class="digit" data-digit="1">1</button>
+                <button class="digit" data-digit="2">2</button>
+                <button class="digit" data-digit="3">3</button>
+              </div>
+              <div class="passcode-row">
+                <button class="digit" data-digit="4">4</button>
+                <button class="digit" data-digit="5">5</button>
+                <button class="digit" data-digit="6">6</button>
+              </div>
+              <div class="passcode-row">
+                <button class="digit" data-digit="7">7</button>
+                <button class="digit" data-digit="8">8</button>
+                <button class="digit" data-digit="9">9</button>
+              </div>
+              <div class="passcode-row">
+                <button class="digit erase" data-action="delete">⌫</button>
+                <button class="digit" data-digit="0">0</button>
+                <button class="digit enter" data-action="unlock">▶</button>
+              </div>
+            </div>
+
+            <div class="passcode-box">
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
+          </div>
+
+          <div class="lock-footer">
+            <button id="unlockSwipe" class="swipe-unlock">Unlock</button>
+          </div>
+        </div>
+
+        <div id="homeScreen" class="screen home-screen hidden">
+          <div class="statusbar">
+            <span id="statusTime">9:41</span>
+            <span>LTE</span>
+          </div>
+
+          <div class="home-inner">
+            <div class="widget">
+              <span>오늘</span>
+              <strong>좋은 하루</strong>
+            </div>
+
+            <div id="appGrid" class="app-grid"></div>
+
+            <div class="dock">
+              <button class="dock-app" data-app="phone">☎</button>
+              <button class="dock-app" data-app="message">✉</button>
+              <button class="dock-app" data-app="music">♪</button>
+            </div>
+          </div>
+        </div>
+
+        <div id="appSheet" class="app-sheet hidden">
+          <div class="sheet-topbar">
+            <div id="sheetTitle">앱</div>
+            <button id="closeApp" class="close-btn">×</button>
+          </div>
+          <div id="sheetContent" class="sheet-content"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
